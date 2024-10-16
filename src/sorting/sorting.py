@@ -18,4 +18,12 @@ def selection_sort(arr):
             temp = arr[i]
             arr[i] = arr[min_idx]
             arr[min_idx] = temp
+            
+def merge_sort(arr):
+    def merge_sort_helper(arr, p, r):
+        def merge(arr, p, q, r):
+            pass
+        pass
+    merge_sort_helper(arr, 0, len(arr))
+        
         
