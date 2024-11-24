@@ -1,9 +1,9 @@
 import pytest
 import sys
 sys.path.append("./")
-from src.sorting.sorting import insertion_sort, selection_sort
+from src.sorting.sorting import insertion_sort, selection_sort, heap_sort
 
-@pytest.fixture(params=[insertion_sort, selection_sort])
+@pytest.fixture(params=[insertion_sort, selection_sort, heap_sort])
 def sort_function(request):
     return request.param
 
